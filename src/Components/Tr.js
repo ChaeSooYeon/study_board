@@ -6,7 +6,7 @@ function Tr({data}){
             <td className="number">{data.id}</td>
             <td className="title">{data.title}</td>
             <td className="writer">{data.writer}</td>
-            <td className="write_date">2021.10.08</td>
+            <td className="write_date">{data.write_date}</td>
         </tr>
     );
 }
