@@ -8,17 +8,48 @@ header {
   text-align: center;
   padding: 5px 15px;
 }
-.List {
+
+button{
+  margin: 2px 4px;
+}
+
+div{
+  padding:10px 5px;
+}
+
+textarea{
+  width: 100%;
+  height: 200px;
+}
+
+.content {
   width: 1000px;
   padding: 20px 30px;
   margin: 0 auto;
+  overflow: hidden;
 }
+
 .List table {
   width: 100%;
   border: 1px solid orange;
 }
-
-.List table th,
-td {
+.List table th,td {
   padding: 10px 20px;
 }
+.List table td{
+  text-align: center;
+}
+.List table td.number{
+  width: 10%;
+}
+.List table td.title{
+  width: 50%;
+  text-align: left;
+}
+.List table td.writer{
+  width: 20%;
+}
+.List table td.write_date{
+  width: 20%;
+}
+

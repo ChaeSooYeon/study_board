@@ -1,12 +1,24 @@
+import { Component, useState } from 'react';
 import './App.css';
 import Header from './Components/Header';
 import List from './Components/List';
+import Write from './Components/Write';
 
-function App() {
+function App(){
+  const [mode, setMode] = useState('view');
+
+  const updateMode = (_mode) => {
+    setMode(_mode);
+  }
+
   return (
     <div className="App">      
       <Header></Header>
-      <List></List>
+      <div className="content">
+        <List updateMode={updateMode}></List>
+        { mode === 'write'? <Write></Write> : console.log(mode) }
+        <Write></Write>
+      </div>
     </div>
   );
 }
