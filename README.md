@@ -9,3 +9,4 @@
 - List, Write 등 나머지 페이지 분리
 - write_date에 실제 작성한 date
 - 로그인
+- 국제화 
