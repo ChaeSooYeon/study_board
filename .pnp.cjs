@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:3faaa7ada405dc47dc8bf057af8f208a587c65ad9ff7466d8494b41d51f2d4891dad5f01cdde495e2059a30d4b5ac5d19af2a596d32c6051d79464d5683995f4#npm:17.0.2"],
             ["react-router-dom", "virtual:3faaa7ada405dc47dc8bf057af8f208a587c65ad9ff7466d8494b41d51f2d4891dad5f01cdde495e2059a30d4b5ac5d19af2a596d32c6051d79464d5683995f4#npm:5.3.0"],
             ["react-scripts", "virtual:3faaa7ada405dc47dc8bf057af8f208a587c65ad9ff7466d8494b41d51f2d4891dad5f01cdde495e2059a30d4b5ac5d19af2a596d32c6051d79464d5683995f4#npm:4.0.3"],
+            ["route", "npm:0.2.5"],
             ["web-vitals", "npm:1.1.2"]
           ],
           "linkType": "SOFT",
@@ -17189,6 +17190,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["route", [
+        ["npm:0.2.5", {
+          "packageLocation": "./.yarn/cache/route-npm-0.2.5-c4f9cfb9ec-70e18b06c0.zip/node_modules/route/",
+          "packageDependencies": [
+            ["route", "npm:0.2.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["rsvp", [
         ["npm:4.8.5", {
           "packageLocation": "./.yarn/cache/rsvp-npm-4.8.5-09f3c6ed40-2d8ef30d8f.zip/node_modules/rsvp/",
@@ -18353,6 +18363,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:3faaa7ada405dc47dc8bf057af8f208a587c65ad9ff7466d8494b41d51f2d4891dad5f01cdde495e2059a30d4b5ac5d19af2a596d32c6051d79464d5683995f4#npm:17.0.2"],
             ["react-router-dom", "virtual:3faaa7ada405dc47dc8bf057af8f208a587c65ad9ff7466d8494b41d51f2d4891dad5f01cdde495e2059a30d4b5ac5d19af2a596d32c6051d79464d5683995f4#npm:5.3.0"],
             ["react-scripts", "virtual:3faaa7ada405dc47dc8bf057af8f208a587c65ad9ff7466d8494b41d51f2d4891dad5f01cdde495e2059a30d4b5ac5d19af2a596d32c6051d79464d5683995f4#npm:4.0.3"],
+            ["route", "npm:0.2.5"],
             ["web-vitals", "npm:1.1.2"]
           ],
           "linkType": "SOFT",
