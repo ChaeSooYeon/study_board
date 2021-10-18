@@ -7,6 +7,8 @@
 - Content(title, content) 작성하여 list에 추가시키기 ☑
 - 내용 조회 페이지 (router 사용)
 - List, Write 등 나머지 페이지 분리
-- write_date에 실제 작성한 date
+- write_date에 실제 작성한 date 입력 되게 
+- db연결 
 - 로그인
-- 국제화 
+- 국제화 적용
+
