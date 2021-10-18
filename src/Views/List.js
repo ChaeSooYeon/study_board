@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import './App.css';
-import Header from './Components/Header';
-import Table from './Components/Table';
-import Write from './Components/Write';
-import Detail from './Components/Detail';
+import '../CSS/App.css';
+import Header from '../Components/Header';
+import Table from '../Components/Table';
+import Write from '../Components/Write';
 
 const initlist = [
   { id:1, title :'제목제목제목제목제목제목제목제목', content: 'this is content1', writer: 'wrter1', write_date:'2021-10-08'},
