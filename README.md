@@ -4,3 +4,4 @@
 - table틀 작성
 - Mode변경 (view,write)
 - Detail Mode 추가, 컴포넌트 구조 변경
+- Content(title, content) 작성하여 list에 
