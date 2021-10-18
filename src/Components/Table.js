@@ -1,7 +1,7 @@
 import React from "react";
 import Tr from "./Tr";
 
-const List = (props) => {
+const Table = (props) => {
   
   const click_WriteButton = () => {
     props.updateMode("write");
@@ -13,7 +13,7 @@ const List = (props) => {
 
   return (
     <div className="List">
-      <button onClick={click_WriteButton}>작성하기</button>
+      <button onClick={click_WriteButton} className="fl-right"><span role="img" aria-lable="pencil">✍</span>글쓰기</button>
       <table>
         <thead>
           <tr><th>No.</th><th>제목</th><th>작성자</th><th>작성일</th></tr>
@@ -28,4 +28,4 @@ const List = (props) => {
   );
 }
 
-export default List;
+export default Table;

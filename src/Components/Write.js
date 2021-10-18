@@ -1,7 +1,7 @@
 import React from "react";
 import { useInput } from "../useInput";
 
-const Write = ({list, setList}) => {
+const Write = ({list, setList, updateMode}) => {
     const _title = useInput("");
     const _content = useInput("");
     const _writer = useInput("writer");
@@ -14,12 +14,20 @@ const Write = ({list, setList}) => {
         setList([...list, {...newBoard}]); //방법2 :스프레드 연산자 사용
     }
 
+    const writingCancle = () => {
+        updateMode("list");
+    }
+
 
     return(
        <div>
-           <input {..._title}  placeholder="title" />
-           <textarea {..._content} placeholder="write here..." />
-           <button onClick={submitContent}> submit </button>
+           <label> 제목 : <input {..._title}  placeholder="title" /></label>
+           <br/>
+           내용 : <textarea {..._content} placeholder="write here..." />
+           <div className="txt-al-center">
+            <button onClick={submitContent}> 등록 </button>
+            <button onClick={writingCancle}> 취소 </button>
+           </div>
        </div>
     );
 }
