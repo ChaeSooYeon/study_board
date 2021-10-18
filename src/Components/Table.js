@@ -20,7 +20,7 @@ const Table = (props) => {
         </thead>
         <tbody>
           {props.list.map((data)=>(
-              <Tr key={data.id} data={data} onClick={view_detailBoard}></Tr>
+            <Tr key={data.id} data={data} onClick={view_detailBoard}></Tr>
           ))}
         </tbody>
       </table>

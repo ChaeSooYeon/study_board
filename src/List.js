@@ -13,7 +13,7 @@ const initlist = [
   { id:5, title :'제목제목제목제목제목제목제목제목', content: 'this is content5', writer: 'wrter5', write_date:'2021-10-12'}
 ];
 
-function App(){
+function List(){
   const [mode, setMode] = useState('list');
   const [list, setList] = useState(initlist);
 
@@ -27,10 +27,9 @@ function App(){
       <div className="content">
         <Table updateMode={updateMode} list={list}></Table>
         { mode === 'write'? <Write list={list} setList={setList} updateMode={updateMode}></Write> : console.log(mode) }
-        { mode === 'detail'? <Detail></Detail> : console.log(mode) }
       </div>
     </div>
   );
 }
 
-export default App;
+export default List;
