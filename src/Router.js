@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import List from './List';
+import List from './Views/List';
 import Detail from './Components/Detail';
 
 function Router(){
