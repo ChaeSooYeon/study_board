@@ -9888,6 +9888,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"moment@npm:^2.29.1":
+  version: 2.29.1
+  resolution: "moment@npm:2.29.1"
+  checksum: 1e14d5f422a2687996be11dd2d50c8de3bd577c4a4ca79ba5d02c397242a933e5b941655de6c8cb90ac18f01cc4127e55b4a12ae3c527a6c0a274e455979345e
+  languageName: node
+  linkType: hard
+
 "move-concurrently@npm:^1.0.1":
   version: 1.0.1
   resolution: "move-concurrently@npm:1.0.1"
@@ -13960,6 +13967,7 @@ resolve@1.18.1:
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
     eslint-config-react-app: ^6.0.0
+    moment: ^2.29.1
     react: ^17.0.2
     react-dom: ^17.0.2
     react-router-dom: ^5.3.0
