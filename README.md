@@ -8,7 +8,7 @@
 - 내용 조회 페이지 (router 사용) ☑
 - 로컬스토리지 적용 ☑
 - List, Write 등 나머지 페이지 분리
-- write_date에 실제 작성한 date 입력 되게 
+- write_date에 실제 작성한 date 입력 되게 ☑
 - 데이터 유효성 
 - db연결 
 - 로그인
