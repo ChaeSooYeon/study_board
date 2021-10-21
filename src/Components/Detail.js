@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Detail({location}){
+function Detail({history, location}){
     const data = location.state.data;
     return(
        <div className="content">
