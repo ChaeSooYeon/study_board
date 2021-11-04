@@ -23,6 +23,16 @@ div{
 textarea{
   width: 100%;
   height: 200px;
+  resize: vertical; 
+
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input{
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid black;
 }
 
 .content {
@@ -64,3 +74,5 @@ textarea{
 .txt-al-center{
   text-align: center;
 }
+
+

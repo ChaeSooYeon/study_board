@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../CSS/View.css";
 
 function Detail({history, location}){
     const data = location.state.data;
@@ -10,9 +11,19 @@ function Detail({history, location}){
                 <button>&lt; 목록</button>
             </Link>
           </div>
-          <div>제목 : {data.title} </div>
-          <div>작성자 : {data.writer}  |  작성일 : {data.write_date}</div>
-          <div>내용 : {data.content} </div>
+          <div className="detail_row">
+              <div className="sub">제목</div>
+              <div>{data.title}</div> 
+          </div>
+          <div className="detail_row">
+              <div className="sub">작성자</div>
+              <div>{data.writer}</div>
+          </div>
+          <div className="detail_row">
+              <div className="sub">작성일</div>
+              <div>{data.write_date}</div> 
+          </div>
+          <div className="detail_cont">{data.content} </div>
        </div>
     );
 }

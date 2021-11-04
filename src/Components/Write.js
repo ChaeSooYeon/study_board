@@ -5,7 +5,6 @@ import 'moment/locale/ko';
 
 const Write = ({list, setList, updateMode}) => {
 
-
     const _title = useInput("");
     const _content = useInput("");
     const _writer = useInput("writer");
@@ -19,8 +18,8 @@ const Write = ({list, setList, updateMode}) => {
     };
 
     const submitContent = () => {
+        const nowTime = moment().format('YYYY-MM-DD HH:mm:ss'); //현재시간 가져오기
         // setList(list.concat({id: id++, ...newBoard})); //방법1 :concat
-        const nowTime = moment().format('YYYY-MM-DD HH:mm:ss');
         setList([...list, {...newBoard, write_date: nowTime}]); //방법2 :스프레드 연산자 사용
         // window.localStorage.setItem("userName", JSON.stringify(userObj));
     }
@@ -32,9 +31,9 @@ const Write = ({list, setList, updateMode}) => {
 
     return(
        <div>
-           <label> 제목 : <input {..._title}  placeholder="title" /></label>
+           <div><input {..._title}  placeholder="제목" /></div>
            <br/>
-           내용 : <textarea {..._content} placeholder="write here..." />
+           <textarea {..._content} placeholder="write here..." />
            <div className="txt-al-center">
             <button onClick={submitContent}> 등록 </button>
             <button onClick={cancleWriting}> 취소 </button>

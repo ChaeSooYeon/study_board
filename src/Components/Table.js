@@ -13,15 +13,17 @@ const Table = (props) => {
 
   return (
     <div className="List">
-      <button onClick={click_WriteButton} className="fl-right"><span role="img" aria-lable="pencil">✍</span>글쓰기</button>
+      <button onClick={click_WriteButton} className="fl-right"><span role="img" >✍</span>글쓰기</button>
       <table>
         <thead>
           <tr><th>No.</th><th>제목</th><th>작성자</th><th>작성일</th></tr>
         </thead>
         <tbody>
-          {props.list.map((data)=>(
+          {props.list? props.list.map((data)=>(
             <Tr key={data.id} data={data} onClick={view_detailBoard}></Tr>
-          ))}
+          )) : 
+            <tr key="0"><td colSpan="4">목록이 없습니다.</td></tr>
+          }
         </tbody>
       </table>
     </div>
